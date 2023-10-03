@@ -40,12 +40,6 @@
     background-size: cover;
 }
 
-h1 {
-    text-align: center;
-    text-transform:uppercase;
-    padding-top: 20px;
-}
-
 .tab-container {
     width:90%;
     max-width: 550px;
@@ -178,7 +172,7 @@ h1 {
 }
 
 .parameter{
-    width:30%;
+    width:33%;
     max-width:200px;
     background-color: rgba(219, 226, 239, 0.5);;
     border-radius: 5px;
@@ -258,7 +252,6 @@ h1 {
       height: auto; /* Allow the height to adjust based on content for smaller screens */
     }
     .parameter-container {
-        flex-direction: column; /* Change to a column layout for smaller screens */
         align-items: center; /* Center-align the .parameter elements */
         gap: 10px; /* Adjust the gap between .parameter elements as needed */
       }
@@ -267,5 +260,23 @@ h1 {
         width: 90%; /* Adjust the width for smaller screens */
         max-width: 90%; /* Adjust the maximum width for smaller screens */
       }
+    .tab-container{
+        .tab-container {
+            flex-direction: column; /* Change to a column layout for smaller screens */
+            align-items: center; /* Center-align the .tab elements */
+          }
+        
+          .tab {
+            font-size: 0.75rem; /* Reduce the font size for smaller screens */
+            padding: 5px 4px; /* Adjust the padding as needed for smaller screens */
+            margin: 2px 0; /* Add margin between the .tab elements */
+          }
+    }
+  }
+  @media (max-width: 450px) {
+    .parameter {
+      width: 30%; /* Adjust the width for screens up to 450px */
+      max-width: 70%; /* Adjust the maximum width for screens up to 450px */
+    }
   }
   
