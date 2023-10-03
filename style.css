@@ -284,5 +284,6 @@
       background: none; /* Hide the .sub-container on screens up to 400px */
       border: none;
       backdrop-filter:none;
+      color: #000000;
     }
   }
