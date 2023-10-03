@@ -257,5 +257,15 @@ h1 {
       width: 90%; /* Adjust the width as needed for smaller screens */
       height: auto; /* Allow the height to adjust based on content for smaller screens */
     }
+    .parameter-container {
+        flex-direction: column; /* Change to a column layout for smaller screens */
+        align-items: center; /* Center-align the .parameter elements */
+        gap: 10px; /* Adjust the gap between .parameter elements as needed */
+      }
+      
+      .parameter {
+        width: 90%; /* Adjust the width for smaller screens */
+        max-width: 90%; /* Adjust the maximum width for smaller screens */
+      }
   }
   
