@@ -22,9 +22,9 @@
                     <button class="btn" data-grantAccess>Grant Access</button>
                 </div>
 
-                <form class="form-container">
+                <form class="form-container" data-searchForm>
                     <input placeholder="Search for city..." data-searchInput>
-                    <button class="btn">
+                    <button class="btn" type="submit">
                         <img src="image/search.png" alt="" width="20" height="20" loading="lazy">
 
                     </button>
@@ -38,6 +38,10 @@
                     <div class="name">
                         <p data-cityName></p>
                         <img data-countryIcon>
+                    </div>
+                    <div class="timeandDate">
+                        <p data-time></p>
+                        <p data-date></p>
                     </div>
 
                     <p data-weatherDescription></p>
@@ -62,7 +66,11 @@
                     </div>
                 </div>
             </div>
+            <div class="error-container">
+                <img src="image/connection-error.gif" alt="" height="300" width="300" data-error>
+            </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
