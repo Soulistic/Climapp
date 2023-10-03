@@ -279,4 +279,10 @@
       max-width: 70%; /* Adjust the maximum width for screens up to 450px */
     }
   }
-  
+  @media (max-width: 400px) {
+    .card-wrapper {
+      background: none; /* Hide the .sub-container on screens up to 400px */
+      border: none;
+      backdrop-filter:none;
+    }
+  }
