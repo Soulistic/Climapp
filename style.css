@@ -17,8 +17,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-height: 90vh; /* Maximum height of 90% of the viewport height */
-    overflow: hidden; /* Enable scrolling if content overflows */
+    height: 600px;
+    width: 500px;
     border: 2px solid #ffffff30;
     display: flex;
     flex-direction: column;
@@ -45,7 +45,7 @@
     width:90%;
     max-width: 550px;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 0.1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -63,7 +63,7 @@
 }
 
 .weather-container{
-    margin-block:4rem;
+    margin-block:2rem;
 }
 
 .btn{
@@ -80,10 +80,21 @@
     margin-bottom: 10px;
 }
 
-.sub-container{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally */
+    justify-content: center; /* Align items vertically */
+    text-align: center; /* Align text center within container */
+}
+.sub-user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align items horizontally */
+    justify-content: center; /* Align items vertically */
+    text-align: center; /* Align text center within container */
+    padding: 10px; /* Add padding to the container if needed */
+    /*  */
 }
 
 .grant-location-container{
@@ -290,5 +301,6 @@
     .sub-user-container{
         background-color:rgba(219, 226, 239, 0.5);
         padding: 30px;
+        text-align: center;
     }
   }
