@@ -17,8 +17,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 600px;
-    width: 500px;
+    max-height: 90vh; /* Maximum height of 90% of the viewport height */
+    overflow: hidden; /* Enable scrolling if content overflows */
     border: 2px solid #ffffff30;
     display: flex;
     flex-direction: column;
@@ -30,6 +30,7 @@
     color: #ffffff;
     padding: 20px 50px;
 }
+
 .wrapper{
     width:100vw;
     height:100vh;
@@ -44,7 +45,7 @@
     width:90%;
     max-width: 550px;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 1rem;
     display: flex;
     justify-content: space-between;
 }
@@ -285,5 +286,9 @@
       border: none;
       backdrop-filter:none;
       color: #000000;
+    }
+    .sub-user-container{
+        background-color:rgba(219, 226, 239, 0.5);
+        padding: 30px;
     }
   }
